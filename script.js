@@ -8,5 +8,5 @@ setInterval(() => {
   const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
 
   document.getElementById('timer').innerText =
-    days + ' zile și ' + hours + ' ore rămase';
+    days + ' zile și ' + hours + ' ore';
 }, 1000);
