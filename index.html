@@ -1,162 +1,201 @@
-<!DOCTYPE html>
-<html lang="ro">
+body{
 
-<head>
+margin:0;
+font-family:Poppins,sans-serif;
+text-align:center;
+background:#fafafa;
+color:#333;
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+}
 
-<title>Mădălina & Ștefan</title>
+h1,h2{
 
-<link rel="stylesheet" href="style.css">
+font-family:'Playfair Display',serif;
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+}
 
-</head>
 
-<body>
+/* INTRO */
 
-<!-- INTRO SCREEN -->
+#intro{
 
-<div id="intro">
+position:fixed;
+width:100%;
+height:100vh;
+background:#111;
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:10;
 
-<h1>Mădălina & Ștefan</h1>
+}
 
-<p>Vă invităm la nunta noastră</p>
+#intro button{
 
-<button onclick="openInvite()">Deschide invitația</button>
+padding:15px 25px;
+margin-top:20px;
+border:none;
+background:#c0392b;
+color:white;
+cursor:pointer;
 
-</div>
+}
 
 
-<!-- MUSIC -->
+/* HERO */
 
-<audio id="music" loop>
-<source src="music.mp3">
-</audio>
+.hero{
 
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 
-<!-- HERO -->
+background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+url("images/hero.jpg");
 
-<header class="hero">
+background-size:cover;
 
-<h1>Mădălina & Ștefan</h1>
+color:white;
 
-<p class="date">07 Iunie 2026</p>
+}
 
-<p class="quote">„Răbdarea este forma tăcută a iubirii”</p>
+.hero h1{
 
-<div id="timer"></div>
+font-size:3.5rem;
 
-</header>
+}
 
+.date{
 
-<section class="section fade">
+font-size:1.5rem;
 
-<h2>Părinții</h2>
+}
 
-<p>Luminița și Ion</p>
-<p>Ofelia și Mihai</p>
+#timer{
 
-</section>
+margin-top:20px;
+font-size:1.3rem;
 
+}
 
-<section class="section fade">
 
-<h2>Nașii</h2>
+/* SECTION */
 
-<p>Andreea și Doru</p>
+.section{
 
-</section>
+padding:80px 20px;
 
+}
 
-<section class="section fade">
+.card{
 
-<h2>Program</h2>
+background:white;
+padding:30px;
+margin:20px auto;
+max-width:400px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
 
-<div class="card">
+}
 
-<h3>Cununie religioasă</h3>
-<p>16:00</p>
-<p>Biserica „Adormirea Maicii Domnului”</p>
 
-</div>
+/* SLIDESHOW */
 
-<div class="card">
+.slideshow{
 
-<h3>Petrecere</h3>
-<p>18:00</p>
-<p>Conacul Filipescu</p>
+max-width:600px;
+margin:auto;
 
-</div>
+}
 
-</section>
+.slide{
 
+width:100%;
+display:none;
+border-radius:10px;
 
-<!-- SLIDESHOW -->
+}
 
-<section class="section fade">
 
-<h2>Povestea noastră</h2>
+/* MAP */
 
-<div class="slideshow">
+iframe{
 
-<img class="slide" src="images/photo1.jpg">
-<img class="slide" src="images/photo2.jpg">
-<img class="slide" src="images/photo3.jpg">
+width:90%;
+height:300px;
+border:none;
 
-</div>
+}
 
-</section>
 
+/* FORM */
 
-<!-- MAP -->
+form{
 
-<section class="section fade">
+display:flex;
+flex-direction:column;
+max-width:320px;
+margin:auto;
 
-<h2>Locație</h2>
+}
 
-<iframe
-src="https://maps.google.com/maps?q=Conacul%20Filipescu&t=&z=13&ie=UTF8&iwloc=&output=embed">
-</iframe>
+input,select{
 
-</section>
+padding:12px;
+margin:10px 0;
 
+}
 
-<!-- RSVP -->
+button{
 
-<section class="section fade">
+padding:12px;
+background:#c0392b;
+color:white;
+border:none;
+cursor:pointer;
 
-<h2>Confirmare participare</h2>
+}
 
-<form action="https://formspree.io/f/YOURCODE" method="POST">
 
-<input type="text" name="name" placeholder="Nume" required>
+/* FOOTER */
 
-<input type="email" name="email" placeholder="Email" required>
+footer{
 
-<select name="attendance">
+padding:40px;
+background:#eee;
 
-<option>Particip</option>
-<option>Nu pot participa</option>
+}
 
-</select>
 
-<button type="submit">Trimite</button>
+/* SCROLL ANIMATION */
 
-</form>
+.fade{
 
-</section>
+opacity:0;
+transform:translateY(40px);
+transition:all 1s;
 
+}
 
-<footer>
+.fade.visible{
 
-<p>Abia așteptăm să sărbătorim împreună ❤️</p>
+opacity:1;
+transform:translateY(0);
 
-</footer>
+}
 
 
-<script src="script.js"></script>
+/* MOBILE */
 
-</body>
-</html>
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:2.5rem;
+
+}
+
+}
