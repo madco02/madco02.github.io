@@ -1,50 +1,137 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Mădălina & Ștefan | Nuntă</title>
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mădălina & Ștefan</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-<section class="hero">
-  <h1>Mădălina & Ștefan</h1>
-  <p class="date">07 | 06 | 2026</p>
-  <p class="quote">Răbdarea este forma tăcută a iubirii</p>
-  <div id="timer"></div>
+<header class="hero">
+
+<h1>Mădălina & Ștefan</h1>
+
+<p class="date">07 Iunie 2026</p>
+
+<p class="quote">„Răbdarea este forma tăcută a iubirii”</p>
+
+<div id="timer"></div>
+
+</header>
+
+
+<section class="section fade">
+
+<h2>Părinții</h2>
+
+<p>Luminița și Ion</p>
+<p>Ofelia și Mihai</p>
+
 </section>
 
-<section class="details">
-  <h2>Detalii Eveniment</h2>
-  <p><strong>Părinți:</strong> Luminița și Ion | Ofelia și Mihai</p>
-  <p><strong>Nași:</strong> Andreea și Doru</p>
+
+<section class="section fade">
+
+<h2>Nașii</h2>
+
+<p>Andreea și Doru</p>
+
 </section>
 
-<section class="program">
-  <h2>Program</h2>
-  <p><strong>Cununie religioasă:</strong> 16:00 – Biserica „Adormirea Maicii Domnului”</p>
-  <p><strong>Petrecere:</strong> 18:00 – Conacul Filipescu</p>
+
+<section class="section fade">
+
+<h2>Program</h2>
+
+<div class="card">
+
+<h3>Cununie religioasă</h3>
+
+<p>16:00</p>
+
+<p>Biserica „Adormirea Maicii Domnului”</p>
+
+</div>
+
+<div class="card">
+
+<h3>Petrecere</h3>
+
+<p>18:00</p>
+
+<p>Conacul Filipescu</p>
+
+</div>
+
 </section>
 
-<section class="rsvp">
-  <h2>Confirmare prezență</h2>
-  <form>
-    <label>Nume <input type="text" required></label><br>
-    <label>Email <input type="email" required></label><br>
-    <p>Participi la ceremonie?</p>
-    <label><input type="radio" name="ceremony" required> Da</label>
-    <label><input type="radio" name="ceremony"> Nu</label><br>
-    <button type="submit">Trimite</button>
-  </form>
+
+<section class="section gallery fade">
+
+<h2>Galerie</h2>
+
+<div class="photos">
+
+<img src="images/photo1.jpg">
+<img src="images/photo2.jpg">
+<img src="images/photo3.jpg">
+
+</div>
+
 </section>
 
-<section class="contact">
-  <h2>Contact</h2>
-  <p>Mădălina: 0763819092</p>
-  <p>Ștefan: 0741265767</p>
+
+<section class="section fade">
+
+<h2>Locație</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=Conacul%20Filipescu&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
 </section>
+
+
+<section class="section fade">
+
+<h2>Confirmare participare</h2>
+
+<form>
+
+<input type="text" placeholder="Nume" required>
+
+<input type="email" placeholder="Email" required>
+
+<select>
+
+<option>Particip</option>
+<option>Nu pot participa</option>
+
+</select>
+
+<button type="submit">Trimite</button>
+
+</form>
+
+</section>
+
+
+<footer>
+
+<p>Abia așteptăm să sărbătorim împreună ❤️</p>
+
+</footer>
+
 
 <script src="script.js"></script>
+
 </body>
 </html>
